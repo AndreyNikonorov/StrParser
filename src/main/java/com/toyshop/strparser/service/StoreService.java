@@ -7,10 +7,10 @@ import com.toyshop.strparser.model.Product;
 public interface StoreService {
 
 
-    public Catalog getCatalog();
+    public String getCatalog();
 
-    public Product getProduct(String code);
+    public String getProduct(String code);
 
-    public Category getCategory(String code);
+    public String getCategory(String code);
 
 }

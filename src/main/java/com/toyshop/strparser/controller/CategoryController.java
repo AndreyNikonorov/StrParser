@@ -1,6 +1,6 @@
 package com.toyshop.strparser.controller;
 
-import com.toyshop.strparser.model.Category;
+
 import com.toyshop.strparser.service.StoreServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,8 +14,8 @@ public class CategoryController {
         this.storeService = storeService;
     }
 
-    @GetMapping("/catalog/toys/{code}")
-    Category getCategory(@PathVariable("code") String code) {
-        return storeService.getCategory(code);
+    @GetMapping("/catalog/{categoryCode}")
+    String getCategory(@PathVariable("categoryCode") String categoryCode) {
+        return storeService.getCategory(categoryCode);
     }
 }
