@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Catalog {
 
 
-    public String printCatalog(){
+    public String printCatalog() {
         return "this is catalog";
     }
 }

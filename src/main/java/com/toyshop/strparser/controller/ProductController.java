@@ -15,7 +15,7 @@ public class ProductController {
         this.storeService = storeService;
     }
 
-    @GetMapping("/catalog/toys/{code}")
+    @GetMapping("/catalog/toys/lego-set/{code}")
     Product getProduct(@PathVariable("code") String code) {
         return storeService.getProduct(code);
     }

@@ -7,8 +7,9 @@ import java.util.Map;
 
 @Repository
 public class CategoryRepo {
-    private Map<String,Category> categoryRepo;
-    public Category getCategory(String code){
+    private Map<String, Category> categoryRepo;
+
+    public Category getCategory(String code) {
         return categoryRepo.get(code);
     }
 }

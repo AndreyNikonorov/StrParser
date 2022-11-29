@@ -13,8 +13,9 @@ public class CatalogController {
     public CatalogController(StoreServiceImpl storeService) {
         this.storeService = storeService;
     }
+
     @GetMapping("/catalog/")
-    Catalog getCatalog(){
+    Catalog getCatalog() {
         return storeService.getCatalog();
     }
 }

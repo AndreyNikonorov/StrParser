@@ -8,9 +8,9 @@ import java.util.Map;
 
 @Repository
 public class ProductRepo {
-    private Map<String,Product> productRepo;
+    private Map<String, Product> productRepo;
 
-    public Product getProduct(String code){
+    public Product getProduct(String code) {
         return productRepo.get(code);
     }
 }

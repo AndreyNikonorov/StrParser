@@ -9,15 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StoreServiceImpl implements StoreService{
-    @Autowired
-    private Catalog catalog;
-    @Autowired
-    private ProductRepo productRepo;
-    @Autowired
-    private CategoryRepo categoryRepo;
+public class StoreServiceImpl implements StoreService {
+    private final Catalog catalog;
+    private final ProductRepo productRepo;
+    private final CategoryRepo categoryRepo;
 
-
+    public StoreServiceImpl(CategoryRepo categoryRepo, Catalog catalog, ProductRepo productRepo) {
+        this.categoryRepo = categoryRepo;
+        this.catalog = catalog;
+        this.productRepo = productRepo;
+    }
 
 
     @Override

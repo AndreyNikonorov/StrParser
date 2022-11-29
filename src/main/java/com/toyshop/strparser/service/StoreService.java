@@ -8,7 +8,9 @@ public interface StoreService {
 
 
     public Catalog getCatalog();
+
     public Product getProduct(String code);
+
     public Category getCategory(String code);
 
 }

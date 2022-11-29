@@ -15,7 +15,7 @@ public class CategoryController {
     }
 
     @GetMapping("/catalog/toys/{code}")
-    Category getCategory(@PathVariable("code") String code){
+    Category getCategory(@PathVariable("code") String code) {
         return storeService.getCategory(code);
     }
 }
